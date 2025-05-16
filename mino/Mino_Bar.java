@@ -4,10 +4,14 @@ import java.awt.Color;
 
 public class Mino_Bar extends Mino {
     
+    // Konstruktor untuk Mino Bar
     public Mino_Bar(){
         create(Color.cyan);
     }
+    
+    // Method untuk mengatur posisi awal Mino Bar
     public void setXY(int x, int y){
+        // Bentuk Mino Bar
         // 
         //o o o o
         //
@@ -20,7 +24,10 @@ public class Mino_Bar extends Mino {
         b[3].x = b[0].x + 2 * Block.SIZE;
         b[3].y = b[0].y;
     }
+    
+    // Method untuk mengatur bentuk Mino Bar
     public void getDirection1(){
+        // Bentuk Mino Bar
         // 
         //o o o o
         //
@@ -32,10 +39,12 @@ public class Mino_Bar extends Mino {
         tempB[2].y = b[0].y;
         tempB[3].x = b[0].x + 2 * Block.SIZE;
         tempB[3].y = b[0].y;
-
         updateXY(1);
     }
+    
+    // Method untuk mengatur bentuk Mino Bar
     public void getDirection2(){
+        // Bentuk Mino Bar
         //   o
         //   o
         //   o
@@ -51,10 +60,15 @@ public class Mino_Bar extends Mino {
 
         updateXY(2);
     }
+    
+    // Method untuk mengatur bentuk Mino Bar
     public void getDirection3(){
         getDirection1();
     }
+    
+    // Method untuk mengatur bentuk Mino Bar
     public void getDirection4(){
         getDirection2();
     }
 }
+
