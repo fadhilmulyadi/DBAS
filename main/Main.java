@@ -4,18 +4,19 @@ import javax.swing.JFrame;
 
 public class Main {
     public static void main(String[] args) {
+        // Membuat jendela baru dengan judul "Dynamic Block Allocation System"
         JFrame window = new JFrame("Dynamic Block Alocation System");
-        window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        window.setResizable(false);
+        window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Mengatur operasi penutupan jendela
+        window.setResizable(false); // Menonaktifkan kemampuan untuk mengubah ukuran jendela
 
-        //Tambah GamePanel Ke Window
-        GamePanel gp = new GamePanel();
-        window.add(gp);
-        window.pack(); //ukuran game panel sesuai ukuran window
+        // Menambahkan GamePanel ke jendela
+        GamePanel gp = new GamePanel(); // Membuat instance GamePanel
+        window.add(gp); // Menambahkan GamePanel ke jendela
+        window.pack(); // Mengatur ukuran jendela sesuai dengan ukuran GamePanel
         
-        window.setLocationRelativeTo(null);
-        window.setVisible(true);
+        window.setLocationRelativeTo(null); // Menempatkan jendela di tengah layar
+        window.setVisible(true); // Menampilkan jendela
 
-        gp.launchGame();
+        gp.launchGame(); // Memulai permainan
     }
 }
