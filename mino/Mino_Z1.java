@@ -5,9 +5,11 @@ import java.awt.Color;
 public class Mino_Z1 extends Mino{
     
     public Mino_Z1(){
+        // Membuat warna mino Z1 berwarna merah
         create(Color.red);
     }
     public void setXY(int x, int y) {
+        // Bentuk awal mino Z1
         //  o
         //o o
         //o
@@ -21,6 +23,7 @@ public class Mino_Z1 extends Mino{
         b[3].y = b[0].y + Block.SIZE;
     }
     public void getDirection1() {
+        // Bentuk mino Z1 ketika berputar 90 derajat
         //  o
         //o o
         //o
@@ -33,9 +36,11 @@ public class Mino_Z1 extends Mino{
         tempB[3].x = b[0].x - Block.SIZE;
         tempB[3].y = b[0].y + Block.SIZE;
 
+        // Update posisi block sesuai dengan posisi mino yang baru
         updateXY(1);
     }
     public void getDirection2() {
+        // Bentuk mino Z1 ketika berputar 90 derajat
         //o o
         //  o o
         //
@@ -48,12 +53,22 @@ public class Mino_Z1 extends Mino{
         tempB[3].x = b[0].x - Block.SIZE;
         tempB[3].y = b[0].y - Block.SIZE;
 
+        // Update posisi block sesuai dengan posisi mino yang baru
         updateXY(2);
     }
     public void getDirection3() {
+        // Bentuk mino Z1 ketika berputar 90 derajat
+        //  o
+        //o o
+        //o
         getDirection1();
     }
     public void getDirection4() {
+        // Bentuk mino Z1 ketika berputar 90 derajat
+        //o o
+        //  o o
+        //
         getDirection2();
     }
 }
+
