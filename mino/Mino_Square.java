@@ -5,9 +5,11 @@ import java.awt.Color;
 public class Mino_Square extends Mino {
 
     public Mino_Square() {
+        // Membuat Mino Square dengan warna kuning
         create(Color.yellow);
     }
     public void setXY(int x, int y){
+        // Bentuk Mino Square
         //o o
         //o o
         //
@@ -20,8 +22,11 @@ public class Mino_Square extends Mino {
         b[3].x = b[0].x + Block.SIZE;
         b[3].y = b[0].y + Block.SIZE;
     }
+
+    // Mino KOTAK tidak memiliki perputaran
     public void getDirection1() {}
     public void getDirection2() {}
     public void getDirection3() {}
     public void getDirection4() {}
 }
+

@@ -5,10 +5,12 @@ import java.awt.Color;
 public class Mino_T  extends Mino{
     
     public Mino_T() {
+        // Buat Mino T dengan warna magenta
         create(Color.magenta); 
     }
 
     public void setXY(int x, int y){
+        // Bentuk awal Mino T
         //  o
         //o o o
         b[0].x = x;
@@ -21,6 +23,7 @@ public class Mino_T  extends Mino{
         b[3].y = b[0].y;
     }
     public void getDirection1(){
+        // Bentuk Mino T ketika berputar 90 derajat
         //  o
         //o o o
         //
@@ -33,9 +36,11 @@ public class Mino_T  extends Mino{
         tempB[3].x = b[0].x + Block.SIZE;
         tempB[3].y = b[0].y;
 
+        // Update posisi block sesuai dengan posisi mino yang baru
         updateXY(1);
     }
     public void getDirection2(){
+        // Bentuk Mino T ketika berputar 90 derajat
         //  o
         //  o o
         //  o
@@ -48,9 +53,11 @@ public class Mino_T  extends Mino{
         tempB[3].x = b[0].x;
         tempB[3].y = b[0].y + Block.SIZE;
 
+        // Update posisi block sesuai dengan posisi mino yang baru
         updateXY(2);
     }
     public void getDirection3(){
+        // Bentuk Mino T ketika berputar 90 derajat
         //  
         //  o o o
         //    o
@@ -63,9 +70,11 @@ public class Mino_T  extends Mino{
         tempB[3].x = b[0].x - Block.SIZE;
         tempB[3].y = b[0].y;
 
+        // Update posisi block sesuai dengan posisi mino yang baru
         updateXY(3);
     }
     public void getDirection4(){
+        // Bentuk Mino T ketika berputar 90 derajat
         //    o
         //  o o 
         //    o
@@ -78,6 +87,8 @@ public class Mino_T  extends Mino{
         tempB[3].x = b[0].x;
         tempB[3].y = b[0].y - Block.SIZE;
 
+        // Update posisi block sesuai dengan posisi mino yang baru
         updateXY(4);
     }
 }
+
