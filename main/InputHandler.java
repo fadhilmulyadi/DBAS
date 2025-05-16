@@ -5,7 +5,7 @@ import java.awt.event.KeyListener;
 
 public class InputHandler implements KeyListener {
 
-    public static boolean upPressed, downPressed, leftPressed, rightPressed, pausePressed;
+    public static boolean upPressed, downPressed, leftPressed, rightPressed, pausePressed, hardDropPressed;
 
     @Override
     public void keyTyped(KeyEvent e) {}
@@ -27,7 +27,7 @@ public class InputHandler implements KeyListener {
         if(code == KeyEvent.VK_RIGHT) {
             rightPressed = true;
         }
-        if(code == KeyEvent.VK_SPACE) {
+        if(code == KeyEvent.VK_ESCAPE) {
             if(pausePressed) {
                 pausePressed = false;
                 GamePanel.music.play(0, true);
@@ -37,6 +37,9 @@ public class InputHandler implements KeyListener {
                 pausePressed = true;
                 GamePanel.music.stop();
             }
+        }
+        if(code == KeyEvent.VK_SPACE) {
+            hardDropPressed = true;
         }
     }
 
